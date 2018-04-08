@@ -1,0 +1,12 @@
+var express = require('express');
+var app = express();
+var path = require('path');
+var port = 8100;
+
+app.listen(port, function(msg){
+    console.log('Server started at ' + 8100)
+});
+app.use('/build', express.static(__dirname + '/build'));
+app.get('/', function (req, res) {
+  res.sendFile('index.html', {root: path.join(__dirname,'./')})
+})
