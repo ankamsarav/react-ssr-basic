@@ -12,5 +12,5 @@ Start the server:
 npm start
 ```
 
-For checking page with out SSR rename the hello.js to someother name and change the hellowithoutssr.js to hello.js
+For checking page with out SSR, rename hellowithoutssr.js to hello.js and change the existing hello.js to something else.
 Similarly rename myserver.jsss to server.js and change the existing server.js to someother name.
